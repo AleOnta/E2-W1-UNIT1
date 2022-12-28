@@ -2,27 +2,133 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: rgb(25, 32, 84);
+  background: linear-gradient(90deg, rgba(25, 32, 84, 1) 0%, rgba(144, 0, 128, 1) 50%, rgba(210, 0, 148, 1) 100%);
+}
+
+/* Header CSS Instructions */
+
+header {
+  margin: 1% 2%;
 }
 
 header > img {
-  width: 300px;
-  height: 120px;
+  width: 18%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
 }
 
 header > p {
-  font-size: 20px;
+  color: white;
+  font-size: 2vw;
   font-weight: 700;
 }
 
+/* Nav CSS Instructions */
+
+nav {
+  margin: 1% 2%;
+  margin-top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3vw;
+  color: #00ffff;
+  cursor: pointer;
+}
+
+nav li::marker {
+  color: white;
+}
+
+nav hr {
+  background-color: #900080;
+  height: 1px;
+}
+
+/* Main CSS Instructions */
+
+main {
+  margin: 1% 2%;
+}
+
+main h2 {
+  font-size: 1.5vw;
+}
+
+main p {
+  font-size: 1.1vw;
+}
+
+main ul,
+ol > li {
+  font-size: 1.1vw;
+  line-height: 2;
+}
+
+/* CSS Instructions for the background of the sections */
+
+main section {
+  color: white;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 10px 0;
+  border-radius: 50px;
+  border: 2px solid #00ffff;
+}
+
+li code {
+  color: black;
+  padding: 0 3px;
+  border-radius: 10px;
+  background-color: #00ffff;
+}
+
+main section:nth-child(3) {
+  padding-bottom: 30px;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+main section:nth-child(5) {
+  padding-bottom: 30px;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+main section:nth-child(6) {
+  padding-bottom: 30px;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+main section:nth-child(3) > p {
+  text-align: center;
+}
+
 table {
+  margin: auto;
   border-collapse: collapse;
 }
 
 td,
 th {
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid white;
   padding: 3px;
   font-size: 15px;
+}
+
+main section:nth-child(4) > p {
+  text-align: center;
+}
+
+main section:nth-child(4) > p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #00ffff;
+  cursor: pointer;
 }
 
 .article {
@@ -31,12 +137,17 @@ th {
 
 .article > p,
 a {
-  margin: 0;
+  margin: auto;
+}
+
+#videoContainer {
+  text-align: center;
 }
 
 iframe {
   width: 600px;
   height: 400px;
+  border-radius: 30px;
 }
 
 caption {
@@ -45,14 +156,23 @@ caption {
 }
 
 aside {
+  color: white;
   margin-bottom: 30px;
+}
+
+aside a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 footer > p {
   margin: 0;
+  color: white;
 }
 
 address {
+  color: white;
   font-size: 14px;
   margin-top: 4px;
 }
