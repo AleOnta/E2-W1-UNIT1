@@ -120,8 +120,9 @@ th {
   font-size: 15px;
 }
 
-main section:nth-child(4) > p {
+#iframeParagraph {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 main section:nth-child(4) > p a {
@@ -164,6 +165,10 @@ aside a {
   color: #00ffff;
   text-decoration: none;
   font-weight: bold;
+}
+
+fieldset {
+  border-color: #00ffff;
 }
 
 footer > p {
